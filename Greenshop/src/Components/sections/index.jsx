@@ -7,18 +7,15 @@ class ShopSection extends Component {
         super(props)
         this.state = {
             counter: 0,
-            total: this.all,
             subtotal: 0,
         };
     }
     render() {
         let totalprice = this.props.price * this.state.counter;
-        let all = 0
         let pr = this.props;
         let pluss = () => {
             this.setState({
                 counter: this.state.counter + 1,
-                subtotal: all+= totalprice
             })
         }
         let minuss = () => {
@@ -26,7 +23,11 @@ class ShopSection extends Component {
                 counter: this.state.counter > 0 ? this.state.counter - 1 : this.state.counter,
             }
             )
-
+        }
+        let clear = () => {
+            this.setState({
+                counter: 0,
+            })
         }
         return (
             <div className="ShopCard">
@@ -48,15 +49,11 @@ class ShopSection extends Component {
                     <button onClick={minuss}>-</button>
                 </p>
                 <p className="total">
-                    {/* {this.state.counter * pr.price}$ */}
                     {totalprice}$
                 </p>
-                <button className='trash'>
+                <button onClick={clear} className='trash'>
                     <img src={trashicon} alt="" />
                 </button>
-                {all}
-                {console.log(all)}
-
             </div>
         )
     }
