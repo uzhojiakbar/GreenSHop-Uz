@@ -1,1 +1,0 @@
-Mail: uzhojiakbar3@gmail.com
