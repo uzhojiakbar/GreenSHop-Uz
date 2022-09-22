@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ShopSection from "../../Components/sections";
 import Products from "../../Mock/data";
 import './style.css'
+import AllProducts from "../../Components/sections/pruducts";
 
 class ShopPage extends Component {
     render() {

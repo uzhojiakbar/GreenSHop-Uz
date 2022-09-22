@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './style.css'
 import trashicon from '../../Assets/img/trash.png'
+import AllProducts from "./pruducts";
 
 class ShopSection extends Component {
     constructor(props) {

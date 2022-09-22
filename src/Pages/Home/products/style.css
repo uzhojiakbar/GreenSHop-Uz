@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 1s;
 }
 
 .main-flowers {
     width: 70%;
+    transition: .1s;
     display: grid;
     justify-content: center;
     align-items: center;

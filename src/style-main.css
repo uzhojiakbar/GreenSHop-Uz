@@ -1,8 +1,59 @@
 .Main{
-    width: 1440px;
+    width: 1340px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 10px;
 }
+
+*{
+}
+
+.main-flowers{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.Eroooor{
+    flex-direction: column-reverse;
+    transition: .2s;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 50px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.erooooooor{
+    color: red;
+}
+
+.forms{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.input{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 60px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+    font-family: cursive;
+}
+
+.input::placeholder{
+    font-weight: 900;
+}
+
+.Products{
+    margin-top: 100px;
+}
+
